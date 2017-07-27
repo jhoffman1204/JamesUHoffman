@@ -1,0 +1,12 @@
+textarea{
+ width: 556px;
+ height: 100px;
+ resize: none;
+}
+button {
+ width: 100px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration-color: white;
+}

@@ -1,0 +1,4 @@
+[19-Jan-2017 13:38:11 CST6CDT] PHP Parse error:  syntax error, unexpected 'file_put_contents' (T_STRING) in /home/stonybr8/public_html/jhoffman1204/email_script.php on line 9
+[19-Jan-2017 15:57:05 CST6CDT] PHP Parse error:  syntax error, unexpected '$email' (T_VARIABLE) in /home/stonybr8/public_html/jhoffman1204/email_script.php on line 14
+[19-Jan-2017 16:24:17 CST6CDT] PHP Parse error:  syntax error, unexpected '@' in /home/stonybr8/public_html/jhoffman1204/email_script.php on line 17
+[23-Jan-2017 17:11:56 CST6CDT] PHP Parse error:  syntax error, unexpected 'default_timezone_set' (T_STRING) in /home/stonybr8/public_html/jhoffman1204/sqlTest.php on line 2

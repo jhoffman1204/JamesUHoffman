@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<!--<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" /> -->
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/customCss.css">
+  <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+    
+    
+    
+<!-- This is for loading the boostrap api
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS unfortunately eliminates all changed fonts
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script src="js/isotope.pkgd.js"></script>
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/camera.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('.gallery .gall_item').touchTouch();
+ });
+ $(document).ready(function(){
+     jQuery('#camera_wrap').camera({
+      loader: false,
+      pagination: true ,
+      minHeight: '500',
+      thumbnails: false,
+      height: '44.42708333333333%',
+      caption: true,
+      navigation: false,
+      fx: 'mosaic'
+    });
+    $('.gallery .gall-item').touchTouch();
+  });
+</script>
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body>
+<div class="texture">
+<!--==============================
+              header
+=================================-->
+<header id="home" class="page">
+  <div class="navigation single-page-nav">
+    <div class="container_12">
+      <div class="grid_12">
+        <h1 class="logo">
+          <a href="index.html">James Hoffman</a>
+        </h1>
+      </div>
+    </div>
+  </div>
+</header>
+<!--=====================
+          Content
+======================-->
+
+<section class="content">
+  <div class="pad-1">
+  </div>
+<section id="gience" class="page">
+  <div class="container_12">
+    <div class="clear"></div>
+    <div id = "abilities">
+    <h2 id="experience">Java</h2>
+          <h3 id="javaTitle">BuzzWord</h3>
+          
+          <div class="grid_8 omega">
+              <img id="picture" src="images/javaProgramming/buzzword_gameplay.png" height="400" width="750">
+          </div>
+          <div class="grid_4 omega">
+              <h3>What is BuzzWord?</h3>
+              <br>
+              <p>My 2016 Fall Semester I programmed my first major project called BuzzWord. It's a game similar to "Boggle", where players must locate words on a grid to score points. Players locate the words by either dragging the mouse over the letters or by typing them as they are seen. The project highlights combining data structures, efficient gameplay algorithms and user interations.</p>
+              
+              <p>The code can be found on my bitbucket account</p>
+              <a href="https://bitbucket.org/JamesHoffman219/jameshoffmanbuzzword219">
+              <p>https://bitbucket.org/JamesHoffman219/jameshoffmanbuzzword219</p>
+              </a>
+          </div>
+          <div class="clear"></div>
+          <div class="clear"></div>
+          
+          
+          <h3>Data Structure</h3>
+          <img id="picture" src="images/javaProgramming/UML_Diagram.PNG">
+          
+          <p>The UML diagram above shows the data structure for this project. I needed to store the information of different users, and that meant the levels they completed, the high scores for those levels etc. I store GameMode Objects into a HashMap of GameModes with the hash-key as the name of the Mode, and then each GameMode is initialzed with preset levels that can have their own time limits, points and personal bests. </p>
+          
+          <p>The users are created as objects and then saved into json files using the ObjectMapper Class. Their information is stored in a local folder and be viewed and accessed by users trying to log in later on. The ObjectMapper class makes it extremely easy to save objects as shown below.</p>
+          
+          <img id="picture" src="images/javaProgramming/ObjectMapper.PNG">
+          
+          <h3>Full Grid Randomization</h3>
+          
+            <p> One of the challenges with this project was that the letters in the grid had to be randomized, but there also had to be a minimum amount of words that the player could find. Statistically, if you have a word bank of 50 countries and you randomize the letters in a 4x4 grid, it is almost impossible to get 3 words from the bank. If you repeatedly load and search the grid, the amount of operations would be too much, so there had to be a way to maintain randomness of the grid while not affecting the runtime of the program when an appropriate game board is needs to be loaded.</p>
+          
+          <p>To solve this I created a method of inserting a specified length of word from any of my libraries into the grid, done through a depth first search algorithm. The idea was to randomly select a starting point for a word, then randomly select a direction for the next letters to go until the entire word was placed in the grid.
+          
+          <h3>Depth First Search Algorithm</h3>
+          <br><img id="picture" src="images/javaProgramming/DFSplacementAlgorithm.PNG"><br>
+          
+          <h3>What Does This Accomplish?</h3> 
+          <p>1) Make sure that the random direction does not steer the word off the grid by throwing a checked excpetion if the coordinates of the random node does not exist.<br>
+          2) Make sure that the word does not get trapped (by another word) so that the entire word cannot be placed. (Example: a 2x2 empty grid is available at the bottom left corner a 5 letter word is trapepd in that empty space). This is done through restarting the algorithm when a word has failed to be played too many times.<br> 
+          3) Checking to see that the random direction selected does not make one word run into another. This is the checkIfNullOnGameBoard method, which makes sure that both the tile does not already have a letter contained, and that the coordinates are a node on the game board.<br>
+          4) Repeatedly check tiles surrounding until one is available. The algorithm will repeatedly try new directions until one direction is available. The counter in the four loop will decrement if the letter if the desired tile is not available, and so the letter the program is trying to place will remain the same. </p><br>
+          
+        <h3>Saving Profiles with Json Files</h3>
+        <img id="picture" src ="images/javaProgramming/json.PNG">
+      <p>Json files are a way to store objects. They are most often seen in web development but java has a library called jackson that is used to save objects. I used the jackson library to save the profiles to a json file. It stores all the levels that were completed and the scores on those levels for each of the game modes. Json files are exremely simple to use with the jackson library. The picture above is a small representation of the entire json file, but you can see that individual objects are saved. The file can both be read later from the same ObjectMapper class, and the values that are put into the json file can be changed (if some are not required to be saved).</p>
+      
+      <h3>Password Encryption</h3>
+        <img id="picture" src="images/javaProgramming/encryption.PNG">
+      <p>I used password Encryption for saving the passwords in the json file. This is to protect people from their own human error that people use the same password for everything. The MessageDigest class which is a one way encryption class. I encrpyt the password chosen, and then encrpty the attempts made to log back in to see if the two encrypted passwords are equal to eachother.</p>
+    </div>
+    <div class="clear"></div>
+<section id="contacts" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+      <h2>Contact Me</h2>
+    </div>
+      <div id="info">
+        James Hoffman <br>
+        24 Hamilton Avenue,<br>
+        Ossining NY 10562.<br>
+        Telephone: (914) 715-6303<br>
+        E-mail: <a href="mailto:james.a.hoffman@stonybrook.edu">james.a.hoffman@stonybrook.edu</a>
+      </div>
+    <div class="clear"></div>
+  </div>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/james.hoffman.98" class="fa fa-facebook"></a>4
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+    
+<!--==============================
+              footer
+=================================-->
+</div>
+<footer id="footer">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="copyright"> &copy; <span id="copyright-year">2014</span>| <a href="#">Privacy Policy </a> <br>
+       Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script>
+  // Prevent console.log from generating errors in IE for the purposes of the demo
+  if ( ! window.console ) console = { log: function(){} };
+  // The actual plugin
+  $('.single-page-nav').singlePageNav({
+      offset: $('.single-page-nav').outerHeight(),
+      filter: ':not(.external)',
+      updateHash: true,
+      beforeStart: function() {
+          console.log('begin scrolling');
+      },
+      onComplete: function() {
+          console.log('done scrolling');
+      }
+  });
+</script>
+<script type="text/javascript">
+          google_api_map_init();
+          function google_api_map_init(){
+            var map;
+            var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14));
+            var styleArray = [
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#193341"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2c5a71"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#29768a"
+            },
+            {
+                "lightness": -37
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#406d80"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#406d80"
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#3e606f"
+            },
+            {
+                "weight": 2
+            },
+            {
+                "gamma": 0.84
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "weight": 0.6
+            },
+            {
+                "color": "#1a3541"
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2c5a71"
+            }
+        ]
+    }
+]
+            function initialize() {
+              var mapOptions = {
+                zoom: 13,
+                center: coordData,
+                scrollwheel: false,
+                styles: styleArray
+              }
+              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+            google.maps.event.addDomListener(window, 'resize', function() {
+              map.setCenter(coordData);
+              var center = map.getCenter();
+            });
+          }
+            google.maps.event.addDomListener(window, "load", initialize);
+          }
+      </script>
+              <!--[if IE]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
+      <script src="js/jquery.knob.js"></script>
+<script>
+  $(function($) {
+    $(".knob").knob({
+        change : function (value) {
+            //console.log("change : " + value);
+        },
+        release : function (value) {
+            //console.log(this.$.attr('value'));
+            console.log("release : " + value);
+        },
+        cancel : function () {
+            console.log("cancel : ", this);
+        },
+        /*format : function (value) {
+            return value + '%';
+        },*/
+        draw : function () {
+            // "tron" case
+            if(this.$.data('skin') == 'tron') {
+                this.cursorExt = 0.3;
+                var a = this.arc(this.cv)  // Arc
+                    , pa                   // Previous arc
+                    , r = 1;
+                this.g.lineWidth = this.lineWidth;
+                if (this.o.displayPrevious) {
+                    pa = this.arc(this.v);
+                    this.g.beginPath();
+                    this.g.strokeStyle = this.pColor;
+                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                    this.g.stroke();
+                }
+                this.g.beginPath();
+                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                this.g.stroke();
+                this.g.lineWidth = 2;
+                this.g.beginPath();
+                this.g.strokeStyle = this.o.fgColor;
+                this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                this.g.stroke();
+                return false;
+            }
+        }
+    });
+    // Example of infinite knob, iPod click wheel
+    var v, up=0,down=0,i=0
+        ,$idir = $("div.idir")
+        ,$ival = $("div.ival")
+        ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
+        ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
+    $("input.infinite").knob(
+                        {
+                        min : 0
+                        , max : 20
+                        , stopper : false
+                        , change : function () {
+                                        if(v > this.cv){
+                                            if(up){
+                                                decr();
+                                                up=0;
+                                            }else{up=1;down=0;}
+                                        } else {
+                                            if(v < this.cv){
+                                                if(down){
+                                                    incr();
+                                                    down=0;
+                                                }else{down=1;up=0;}
+                                            }
+                                        }
+                                        v = this.cv;
+                                    }
+                        });
+    });
+</script>
+<script src="js/isotop_ini.js"></script>
+</body>
+</html>
